@@ -1,0 +1,319 @@
+body {
+    margin: 0 auto;
+    font-family: "Exo 2", serif;
+  }
+  .container {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  header {
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #89A8B2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center; 
+    width: 100%; 
+  }
+  
+  nav ul li {
+    /* height: 60px; */
+    line-height: 60px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+  }
+  nav ul li:hover {
+    background-color: #fff;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* About Section */
+  .about-section,
+  .work-projects-section,
+  .education-section,
+  .blogs-section,
+  .footer {
+    padding-right: 10px;
+    margin: 0 auto;
+    background-color: #B3C8CF;
+    overflow: hidden;
+    box-shadow: -10px 0 10px -5px #7886C7, 10px 0 10px -5px #7886C7;
+  }
+
+  .work-projects-section,
+  .blogs-section
+ {
+    background-color: #fff;
+  }
+
+  .about-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  .right img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+  
+  .left,
+  .right {
+    height: auto;
+    margin-right: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-right: 30px;
+  }
+  .right{
+    width: 80%;
+    grid-row-start: 0;
+  }
+  .right h1, h3 {
+    text-align: center;
+  }
+
+  .left p{
+    padding-right: 5px;
+  }
+
+  .work-projects-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  .work-left{
+    width: 90%;
+    height: auto;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .project-card {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+  .project-card img {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+  }
+  .project-info {
+    border: 1px solid #2D336B;
+    text-align: center;
+    background-color: #E5E1DA;
+    padding: 2px;
+    min-height: 70%;
+  }
+  .project-title {
+    text-align: center;
+    background-color: #2D336B;
+    color: #fff;
+    margin: 0px;
+    padding: 8px;
+    font-weight: 800;
+  }
+  .education {
+    margin: 20px;
+  }
+  .edu-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .edu-left,
+  .edu-right {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+  }
+  .edu-left img,
+  .edu-right img {
+    width: 100px;
+  }
+  .edu-info {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 100%;
+  }
+  .edu-right {
+    margin-left: 50px;
+  }
+  .edu-info p{
+    margin-right: 30px;
+  }
+  
+  /* Blogs */
+  .blogs-section {
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+  }
+
+  .blog {
+    width: 90%;
+    text-align: center;
+  }
+  .blogs-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+
+  }
+  
+  .blogs-section .blog img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .blog-info {
+    border: 1px solid #2D336B;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E5E1DA;
+  }
+  .blog-info p {
+    padding: 20px;
+  }
+  
+  /* footer */
+  .footer h2 {
+    text-align: center;
+  }
+  .footer-section {
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  .footer-section .column {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .footer-section .column img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin: auto;
+  }
+
+
+
+  @media (max-width: 900px) {
+    .about-section{
+      padding-right: 20px;
+    }
+    .left, .right {
+      width: 100%;
+      margin-right: 0;
+    }
+    .right img{
+        width: 50%;
+    }
+    .projects{
+      display: block;
+    }
+    .project-info{
+      width: 90%;
+      min-height: 90%;
+    }
+    .project-card img {
+      display: none;
+    }
+    .edu-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .edu-right {
+      margin-left: 0px;
+    }
+    .blogs-cards{
+      display: block;
+  
+    }
+    
+  }
+
+  @media (max-width: 560px) {
+    nav ul {
+      display: block;
+      text-align: center; 
+    }
+    nav ul li {
+      display: block;
+      width: 100%;
+    }
+    .about-section{
+        display: block;
+      }
+    .left, .right {
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    .work-projects-section{
+      display: block;
+    }
+    .project-card img {
+      display: block;
+    }
+    .edu-cards{
+      display: block
+    }
+    .footer-section {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media(max-width: 1335px){
+    .project-info{
+      min-height: 70%;
+    }
+   }
+
+   @media(max-width: 1250px){
+    .project-info{
+      min-height: 75%;
+    }
+   }
+   @media(max-width: 1070px){
+    .project-info{
+      min-height: 75%;
+    }
+   }
